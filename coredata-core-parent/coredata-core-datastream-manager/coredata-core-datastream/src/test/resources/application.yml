@@ -1,0 +1,48 @@
+spring:
+  kafka:
+    bootstrap-servers: 172.16.3.113:9094
+    consumer:
+      group-id: log         
+      auto-offset-reset: latest        
+      enable-auto-commit: false
+      auto-commit-interval: 500
+    topics:
+      log: logs
+  redis:
+    host: 172.16.3.113
+    port: 6379
+    database: 0
+    pub: 
+      state: events
+      alarm: alarm
+    sub:
+      transform: transformChannel
+      mining: miningChannel
+      decision: decisionChannel
+  data:
+    neo4j:
+      auto-index: assert
+      uri: bolt://172.16.3.113
+      username: neo4j
+      password: deta
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      repositories:
+        enable: true
+        
+kafka:
+  coredataTopic: coredata
+  dstransformTopic: dstransform
+  dsmetricTopic: dsmetric
+  metricTopic: metrics
+  alarmTopic: alarm
+  addrType: OUTSIDE
+
+zookeeper:
+  addr: 172.16.3.113:2181
+  
+stream:
+  parallelNum: 1
+  

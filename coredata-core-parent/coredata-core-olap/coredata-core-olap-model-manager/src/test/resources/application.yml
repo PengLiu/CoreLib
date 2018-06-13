@@ -1,0 +1,51 @@
+
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    org.coredata: DEBUG
+
+spring:  
+  redis:
+    host: 172.16.3.113
+    port: 6379
+    pool:
+      max-idle: 10
+      min-idle: 0
+      max-active: 10
+      max-wait: 5
+  data:
+    neo4j:
+      auto-index: assert
+      uri: bolt://172.16.3.113
+      username: neo4j
+      password: deta    
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      repositories:
+        enable: true
+  kafka:
+    bootstrap-servers: 172.16.3.113:9094
+    consumer:
+      group-id: olap_model         
+      auto-offset-reset: latest        
+      enable-auto-commit: true
+      auto-commit-interval: 500
+    topics:
+      data_import: test_data_import
+  datasource:  
+    url : jdbc:mysql://172.16.3.113:3306/coredata_test  
+    username : root  
+    password : passed  
+    driverClassName : com.mysql.jdbc.Driver  
+  jpa:  
+    database : MYSQL  
+    show-sql : true  
+    hibernate:  
+      ddl-auto : create-drop
+      naming-strategy : org.hibernate.cfg.ImprovedNamingStrategy  
+    properties:  
+      hibernate:  
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect

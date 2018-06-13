@@ -1,0 +1,28 @@
+{
+  "query":{
+    "bool": {
+      "must": [
+        {
+          "nested" : {
+            "path" : "props",
+            "score_mode" : "none",
+            "query" : {
+                "term" : {
+                    "props.location": 1
+                }
+            }
+          }
+        },
+        {
+          "term": {
+            "level": 30
+          }
+        }
+      ]
+      
+    }
+  },
+  "script": {
+    "source": "ctx._source.level++"
+  }
+}

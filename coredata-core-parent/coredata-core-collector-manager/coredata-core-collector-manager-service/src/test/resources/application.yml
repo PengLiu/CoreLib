@@ -1,0 +1,89 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      repositories:
+        enable: true
+    neo4j:
+      auto-index: assert
+      uri: bolt://172.16.3.113
+      username: neo4j
+      password: deta
+  kafka:
+    bootstrap-servers: 172.16.3.113:9094
+    consumer:
+      group-id: data_import
+      auto-offset-reset: latest        
+      enable-auto-commit: true
+      auto-commit-interval: 500
+    topics:
+      data_import: data_import
+
+hive:  
+  url: jdbc:hive2://172.16.5.71:10000
+  driver-class-name: org.apache.hive.jdbc.HiveDriver
+  username: grid
+  password: grid
+  
+hdfs:
+  uri: hdfs://172.16.5.71:9000
+  user: grid 
+
+---
+spring:
+  profiles: mysql_test
+  datasource:
+    platform: mysql
+    url : jdbc:mysql://172.16.3.113:3306/coredata_test  
+    username : root  
+    password : passed  
+    driverClassName : com.mysql.jdbc.Driver
+    initialization-mode: always
+  jpa:  
+    show-sql : true  
+    hibernate:  
+      ddl-auto : update  
+      naming-strategy : org.hibernate.cfg.ImprovedNamingStrategy  
+    properties:  
+      hibernate:  
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect
+---  
+spring:
+  profiles: oracle_test
+  datasource:
+    platform: oracle
+    url : jdbc:oracle:thin:@172.16.3.160:1521:ORCL  
+    username : 'c##deta'  
+    password : qazWSX  
+    initialization-mode: always    
+---
+spring:
+  profiles: sqlserver_test
+  datasource:
+    platform: sqlserver
+    url : jdbc:sqlserver://172.16.3.160:1433;DatabaseName=master  
+    username : sa  
+    password : 1qaz@WSX  
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialization-mode: always
+    
+---
+spring:
+  profiles: dameng_test
+  datasource:
+    platform: dameng
+    url : jdbc:dm://172.16.3.192:5236/DAMENG  
+    username : DETA  
+    password : 123456789  
+    driverClassName : dm.jdbc.driver.DmDriver
+    initialization-mode: always
+  jpa:  
+    show-sql : true  
+    hibernate:  
+      ddl-auto : update  
+      naming-strategy : org.hibernate.cfg.ImprovedNamingStrategy  
+    properties:  
+      hibernate:  
+        dialect : org.hibernate.dialect.DmDialect

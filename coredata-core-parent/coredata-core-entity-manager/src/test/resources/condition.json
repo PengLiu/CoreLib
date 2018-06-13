@@ -1,0 +1,17 @@
+{
+	
+	"filter":{
+		"or":{
+			"and": {
+				"or":[
+						{"and": [{"ops":"lte", "field": "age", "value": 20}, {"ops":"eq", "field": "name", "value": "user_name"}]},
+						{"and": [{"ops":"lte", "field": "age", "value": 20},{"ops":"eq", "field": "name", "value": "user_name2"}]}		
+					],
+				"and": [{"ops":"lte", "field": "age", "value": 50}]
+			},
+			"or": [{"ops":"gt", "field": "age", "value": 37}]
+		}
+	},
+	"pagination": { "size": 10, "page": 1}, 
+	"sort": { "field": ["field1", "field2"], "direction" : "ASC"}
+}

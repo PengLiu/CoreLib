@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.coredata</groupId>
+		<artifactId>coredata-core-datastream-manager</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>coredata-core-datastream-blueprint</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-stream-kafka_2.11</artifactId>
+			<version>0.20</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-actor</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-entity-manager</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-olap-model-api</artifactId>
+			<version>${product.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-data-jpa</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-elasticsearch</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

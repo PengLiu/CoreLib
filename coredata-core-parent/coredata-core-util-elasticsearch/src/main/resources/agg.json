@@ -1,0 +1,1 @@
+{"aggregations":[{"type":"Term","field":"name","name":"termAgg"},{"type":"DateHistogram","field":"taskTime","interval":"6s","name":"dateAgg","subAggs":[{"type":"Term","field":"clientIp","name":"subIp"}]},{"type":"Term","field":"serverIpd","name":"ipRange","marks":["172.16.1.0/24","172.16.1.1/24"]}]}

@@ -1,0 +1,70 @@
+{"station_id":3,"name":"San Jose Civic Center","lat":37.330698,"long":-121.888979,"dockcount":15,"landmark":"San Jose","installation":1375632000000}
+{"station_id":4,"name":"Santa Clara at Almaden","lat":37.333988,"long":-121.894902,"dockcount":11,"landmark":"San Jose","installation":1375718400000}
+{"station_id":5,"name":"Adobe on Almaden","lat":37.331415,"long":-121.8932,"dockcount":19,"landmark":"San Jose","installation":1375632000000}
+{"station_id":8,"name":"San Salvador at 1st","lat":37.330165,"long":-121.885831,"dockcount":15,"landmark":"San Jose","installation":1375632000000}
+{"station_id":11,"name":"MLK Library","lat":37.335885,"long":-121.88566,"dockcount":19,"landmark":"San Jose","installation":1375718400000}
+{"station_id":14,"name":"Arena Green / SAP Center","lat":37.332692,"long":-121.900084,"dockcount":19,"landmark":"San Jose","installation":1375632000000}
+{"station_id":22,"name":"Redwood City Caltrain Station","lat":37.486078,"long":-122.232089,"dockcount":25,"landmark":"Redwood City","installation":1376496000000}
+{"station_id":25,"name":"Broadway at Main","lat":37.486725,"long":-122.225551,"dockcount":15,"landmark":"Redwood City","installation":1376236800000}
+{"station_id":28,"name":"Mountain View Caltrain Station","lat":37.394358,"long":-122.076713,"dockcount":23,"landmark":"Mountain View","installation":1376496000000}
+{"station_id":31,"name":"San Antonio Shopping Center","lat":37.400443,"long":-122.108338,"dockcount":15,"landmark":"Mountain View","installation":1388419200000}
+{"station_id":34,"name":"Palo Alto Caltrain Station","lat":37.443988,"long":-122.164759,"dockcount":23,"landmark":"Palo Alto","installation":1376409600000}
+{"station_id":37,"name":"Cowper at University","lat":37.448598,"long":-122.159504,"dockcount":11,"landmark":"Palo Alto","installation":1376409600000}
+{"station_id":41,"name":"Clay at Battery","lat":37.795001,"long":-122.39997,"dockcount":15,"landmark":"San Francisco","installation":1376841600000}
+{"station_id":46,"name":"Washington at Kearney","lat":37.795425,"long":-122.404767,"dockcount":15,"landmark":"San Francisco","installation":1376841600000}
+{"station_id":49,"name":"Spear at Folsom","lat":37.789625,"long":-122.390264,"dockcount":19,"landmark":"San Francisco","installation":1376928000000}
+{"station_id":54,"name":"Embarcadero at Bryant","lat":37.787152,"long":-122.388013,"dockcount":15,"landmark":"San Francisco","installation":1376928000000}
+{"station_id":57,"name":"5th at Howard","lat":37.781752,"long":-122.405127,"dockcount":15,"landmark":"San Francisco","installation":1377014400000}
+{"station_id":60,"name":"Embarcadero at Sansome","lat":37.80477,"long":-122.403234,"dockcount":15,"landmark":"San Francisco","installation":1377014400000}
+{"station_id":4,"name":"Santa Clara at Almaden","lat":37.333988,"long":-121.894902,"dockcount":11,"landmark":"San Jose","installation":1375718400000}
+{"station_id":7,"name":"Paseo de San Antonio","lat":37.333798,"long":-121.886943,"dockcount":15,"landmark":"San Jose","installation":1375804800000}
+{"station_id":10,"name":"San Jose City Hall","lat":37.337391,"long":-121.886995,"dockcount":15,"landmark":"San Jose","installation":1375718400000}
+{"station_id":13,"name":"St James Park","lat":37.339301,"long":-121.889937,"dockcount":15,"landmark":"San Jose","installation":1375718400000}
+{"station_id":21,"name":"Franklin at Maple","lat":37.481758,"long":-122.226904,"dockcount":15,"landmark":"Redwood City","installation":1376236800000}
+{"station_id":24,"name":"Redwood City Public Library","lat":37.484219,"long":-122.227424,"dockcount":15,"landmark":"Redwood City","installation":1376236800000}
+{"station_id":27,"name":"Mountain View City Hall","lat":37.389218,"long":-122.081896,"dockcount":15,"landmark":"Mountain View","installation":1376582400000}
+{"station_id":30,"name":"Evelyn Park and Ride","lat":37.390277,"long":-122.066553,"dockcount":15,"landmark":"Mountain View","installation":1376582400000}
+{"station_id":33,"name":"Rengstorff Avenue / California Street","lat":37.400241,"long":-122.099076,"dockcount":15,"landmark":"Mountain View","installation":1376582400000}
+{"station_id":36,"name":"California Ave Caltrain Station","lat":37.429082,"long":-122.142805,"dockcount":15,"landmark":"Palo Alto","installation":1376409600000}
+{"station_id":39,"name":"Powell Street BART","lat":37.783871,"long":-122.408433,"dockcount":19,"landmark":"San Francisco","installation":1377360000000}
+{"station_id":45,"name":"Commercial at Montgomery","lat":37.794231,"long":-122.402923,"dockcount":15,"landmark":"San Francisco","installation":1376841600000}
+{"station_id":48,"name":"Embarcadero at Vallejo","lat":37.799953,"long":-122.398525,"dockcount":15,"landmark":"San Francisco","installation":1376841600000}
+{"station_id":51,"name":"Embarcadero at Folsom","lat":37.791464,"long":-122.391034,"dockcount":19,"landmark":"San Francisco","installation":1376928000000}
+{"station_id":56,"name":"Beale at Market","lat":37.792251,"long":-122.397086,"dockcount":19,"landmark":"San Francisco","installation":1376928000000}
+{"station_id":59,"name":"Golden Gate at Polk","lat":37.781332,"long":-122.418603,"dockcount":23,"landmark":"San Francisco","installation":1377014400000}
+{"station_id":3,"name":"San Jose Civic Center","lat":37.330698,"long":-121.888979,"dockcount":15,"landmark":"San Jose","installation":1375632000000}
+{"station_id":6,"name":"San Pedro Square","lat":37.336721,"long":-121.894074,"dockcount":15,"landmark":"San Jose","installation":1375804800000}
+{"station_id":9,"name":"Japantown","lat":37.348742,"long":-121.894715,"dockcount":15,"landmark":"San Jose","installation":1375632000000}
+{"station_id":12,"name":"SJSU 4th at San Carlos","lat":37.332808,"long":-121.883891,"dockcount":19,"landmark":"San Jose","installation":1375804800000}
+{"station_id":16,"name":"SJSU - San Salvador at 9th","lat":37.333955,"long":-121.877349,"dockcount":15,"landmark":"San Jose","installation":1375804800000}
+{"station_id":23,"name":"San Mateo County Center","lat":37.488501,"long":-122.231061,"dockcount":15,"landmark":"Redwood City","installation":1376496000000}
+{"station_id":26,"name":"Redwood City Medical Center","lat":37.487682,"long":-122.223492,"dockcount":15,"landmark":"Redwood City","installation":1376236800000}
+{"station_id":29,"name":"San Antonio Caltrain Station","lat":37.40694,"long":-122.106758,"dockcount":23,"landmark":"Mountain View","installation":1376496000000}
+{"station_id":32,"name":"Castro Street and El Camino Real","lat":37.385956,"long":-122.083678,"dockcount":11,"landmark":"Mountain View","installation":1388419200000}
+{"station_id":35,"name":"University and Emerson","lat":37.444521,"long":-122.163093,"dockcount":11,"landmark":"Palo Alto","installation":1376496000000}
+{"station_id":38,"name":"Park at Olive","lat":37.4256839,"long":-122.1377775,"dockcount":15,"landmark":"Palo Alto","installation":1376409600000}
+{"station_id":42,"name":"Davis at Jackson","lat":37.79728,"long":-122.398436,"dockcount":15,"landmark":"San Francisco","installation":1376841600000}
+{"station_id":47,"name":"Post at Kearney","lat":37.788975,"long":-122.403452,"dockcount":19,"landmark":"San Francisco","installation":1376841600000}
+{"station_id":50,"name":"Harry Bridges Plaza (Ferry Building)","lat":37.795392,"long":-122.394203,"dockcount":23,"landmark":"San Francisco","installation":1376928000000}
+{"station_id":55,"name":"Temporary Transbay Terminal (Howard at Beale)","lat":37.789756,"long":-122.394643,"dockcount":23,"landmark":"San Francisco","installation":1376928000000}
+{"station_id":58,"name":"San Francisco City Hall","lat":37.77865,"long":-122.418235,"dockcount":19,"landmark":"San Francisco","installation":1377014400000}
+{"station_id":63,"name":"Howard at 2nd","lat":37.786978,"long":-122.398108,"dockcount":19,"landmark":"San Francisco","installation":1377100800000}
+{"station_id":66,"name":"South Van Ness at Market","lat":37.774814,"long":-122.418954,"dockcount":19,"landmark":"San Francisco","installation":1377187200000}
+{"station_id":69,"name":"San Francisco Caltrain 2 (330 Townsend)","lat":37.776377,"long":-122.39607,"dockcount":23,"landmark":"San Francisco","installation":1377187200000}
+{"station_id":72,"name":"Civic Center BART (7th at Market)","lat":37.780356,"long":-122.412919,"dockcount":23,"landmark":"San Francisco","installation":1377187200000}
+{"station_id":75,"name":"Mechanics Plaza (Market at Battery)","lat":37.7913,"long":-122.399051,"dockcount":19,"landmark":"San Francisco","installation":1377360000000}
+{"station_id":80,"name":"San Jose Government Center","lat":37.352601,"long":-121.905733,"dockcount":15,"landmark":"San Jose","installation":1388419200000}
+{"station_id":62,"name":"2nd at Folsom","lat":37.785299,"long":-122.396236,"dockcount":19,"landmark":"San Francisco","installation":1377100800000}
+{"station_id":65,"name":"Townsend at 7th","lat":37.771058,"long":-122.402717,"dockcount":15,"landmark":"San Francisco","installation":1377100800000}
+{"station_id":68,"name":"Yerba Buena Center of the Arts (3rd @ Howard)","lat":37.784878,"long":-122.401014,"dockcount":19,"landmark":"San Francisco","installation":1377187200000}
+{"station_id":71,"name":"Powell at Post (Union Square)","lat":37.788446,"long":-122.408499,"dockcount":19,"landmark":"San Francisco","installation":1377187200000}
+{"station_id":74,"name":"Steuart at Market","lat":37.794139,"long":-122.394434,"dockcount":23,"landmark":"San Francisco","installation":1377360000000}
+{"station_id":77,"name":"Market at Sansome","lat":37.789625,"long":-122.400811,"dockcount":27,"landmark":"San Francisco","installation":1377360000000}
+{"station_id":83,"name":"Mezes Park","lat":37.491269,"long":-122.236234,"dockcount":15,"landmark":"Redwood City","installation":1392825600000}
+{"station_id":61,"name":"2nd at Townsend","lat":37.780526,"long":-122.390288,"dockcount":27,"landmark":"San Francisco","installation":1377100800000}
+{"station_id":64,"name":"2nd at South Park","lat":37.782259,"long":-122.392738,"dockcount":15,"landmark":"San Francisco","installation":1377100800000}
+{"station_id":67,"name":"Market at 10th","lat":37.776619,"long":-122.417385,"dockcount":27,"landmark":"San Francisco","installation":1377187200000}
+{"station_id":70,"name":"San Francisco Caltrain (Townsend at 4th)","lat":37.776617,"long":-122.39526,"dockcount":19,"landmark":"San Francisco","installation":1377187200000}
+{"station_id":73,"name":"Grant Avenue at Columbus Avenue","lat":37.798522,"long":-122.407245,"dockcount":15,"landmark":"San Francisco","installation":1377014400000}
+{"station_id":76,"name":"Market at 4th","lat":37.786305,"long":-122.404966,"dockcount":19,"landmark":"San Francisco","installation":1377360000000}
+{"station_id":82,"name":"Broadway St at Battery St","lat":37.798541,"long":-122.400862,"dockcount":15,"landmark":"San Francisco","installation":1390320000000}

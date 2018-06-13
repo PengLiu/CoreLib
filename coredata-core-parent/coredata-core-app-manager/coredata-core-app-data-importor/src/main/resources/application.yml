@@ -1,0 +1,101 @@
+
+temppath: /tmp
+
+---
+#开发环境
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    com.coredata: ERROR
+    
+server:
+  port: 8000
+#存放上传文件的临时目录,linux设置为/tmp/
+spider:
+  src: http://172.16.2.102:5000/api/v2/src
+  command: http://172.16.2.102:5000/api/v2/command
+spring:
+  profiles: dev
+  data:
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      repositories:
+        enable: true
+    neo4j:
+      auto-index: assert
+      uri: bolt://172.16.3.113
+      username: neo4j
+      password: deta
+  datasource:
+    url: jdbc:mysql://172.16.3.113:3306/datainsight?useSSL=false
+    username: root
+    password: passed
+  jpa:  
+    database : MYSQL
+    show-sql : true
+    hibernate:  
+      ddl-auto : update  
+    properties:  
+      hibernate:  
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect
+  kafka:
+    bootstrap-servers: 172.16.3.113:9094
+    consumer:
+      group-id: log         
+      auto-offset-reset: latest        
+      enable-auto-commit: false
+      auto-commit-interval: 500
+    topics:
+      log: logs
+      olap: olap
+hive:  
+  url: jdbc:hive2://172.16.5.71:10000
+  driver-class-name: org.apache.hive.jdbc.HiveDriver
+  username: grid
+  password: grid
+hdfs:
+  uri: hdfs://172.16.5.71:9000
+  user: grid
+
+elasticsearch:
+  addr: 172.16.3.113:9200 
+---
+#测试环境
+
+spider:
+  src: http://172.16.5.161:5000/api/v2/src
+  command: http://172.16.5.161:5000/api/v2/command
+spring:
+  profiles: test
+  data:
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      repositories:
+        enable: true
+  datasource:
+    url: jdbc:mysql://172.16.3.113:3306/datainsight_test?useSSL=false
+    username: root
+    password: passed
+  jpa:  
+    database : MYSQL
+    show-sql : true
+    hibernate:  
+      ddl-auto : update  
+    properties:  
+      hibernate:  
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect
+hive:  
+  url: jdbc:hive2://172.16.5.71:10000/?hive.execution.engine=spark
+  driver-class-name: org.apache.hive.jdbc.HiveDriver 
+  type: com.alibaba.druid.pool.DruidDataSource
+  username: grid
+  password: grid
+  
+hdfs:
+  uri: hdfs://172.16.5.71:9000
+  user: grid

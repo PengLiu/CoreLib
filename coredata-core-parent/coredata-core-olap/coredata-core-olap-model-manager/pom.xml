@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.coredata</groupId>
+		<artifactId>coredata-core-olap</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>coredata-core-olap-model-manager</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-datastream-blueprint</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-olap-model-api</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-query</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-elasticsearch</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-actor</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>		
+	</dependencies>
+</project>

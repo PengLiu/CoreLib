@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.coredata</groupId>
+		<artifactId>coredata-core-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>coredata-core-metric-manager</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-query</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-nlp</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-elasticsearch</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.coredata</groupId>
+			<artifactId>coredata-core-util-actor</artifactId>
+			<version>${product.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-stream-kafka_2.11</artifactId>
+			<version>0.20</version>
+		</dependency>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-slf4j_2.11</artifactId>
+			<version>2.5.12</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
+		
+	</dependencies>
+</project>

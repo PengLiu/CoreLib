@@ -1,0 +1,8 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      repositories:
+        enable: true

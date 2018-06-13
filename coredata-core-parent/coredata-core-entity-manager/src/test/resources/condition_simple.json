@@ -1,0 +1,6 @@
+{
+	
+	"filter":{"ops":"like", "field": "age", "value": "001"},
+	"pagination": { "size": 10, "page": 1}, 
+	"sort": { "field": ["field1", "field2"], "direction" : "ASC"}
+}

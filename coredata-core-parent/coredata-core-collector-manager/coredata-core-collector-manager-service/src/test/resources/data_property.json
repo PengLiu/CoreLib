@@ -1,0 +1,23 @@
+{
+	"station_id": {
+		"type": "long"
+	},
+	"name": {
+		"type": "keyword"
+	},
+	"lat": {
+		"type": "double"
+	},
+	"long": {
+		"type": "double"
+	},
+	"dockcount": {
+		"type": "integer"
+	},
+	"landmark": {
+		"type": "text"
+	},
+	"installation": {
+		"type": "date"
+	}
+}

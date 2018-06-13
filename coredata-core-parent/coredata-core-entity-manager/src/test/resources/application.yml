@@ -1,0 +1,24 @@
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework: DEBUG
+    com.coredata: DEBUG
+#neo4j的索引需要在正式运行前创建完毕，程序中只做索引的合法性检查
+spring:
+  data:
+    neo4j:
+      auto-index: assert
+      uri: bolt://172.16.3.113
+      username: neo4j
+      password: deta
+      
+---
+spring:
+  profiles: localhost
+  data:
+    neo4j:
+      auto-index: assert
+      uri: bolt://localhost
+      #username: neo4j
+      #password: deta

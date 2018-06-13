@@ -1,0 +1,62 @@
+server:
+  port: 8000
+
+spring:
+  kafka:
+    bootstrap-servers: 172.16.3.113:9094
+    consumer:
+      group-id: log         
+      auto-offset-reset: latest        
+      enable-auto-commit: false
+      auto-commit-interval: 500
+    topics: 
+      log: logs
+      olap: olap
+  servlet:
+    multipart:
+      max-file-size: 50MB
+  datasource:  
+    url : jdbc:mysql://172.16.3.113:3306/coredata_test?useSSL=true  
+    username : root  
+    password : passed  
+    driverClassName : com.mysql.jdbc.Driver
+    platform: mysql
+    initialization-mode: always  
+  jpa:  
+    database : MYSQL  
+    show-sql : true  
+    hibernate:  
+      ddl-auto : update  
+      naming-strategy : org.hibernate.cfg.ImprovedNamingStrategy  
+    properties:  
+      hibernate:  
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect
+  data:
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      repositories:
+        enable: true
+    neo4j:
+          auto-index: assert
+          uri: bolt://172.16.3.113
+          username: neo4j
+          password: deta    
+
+hive:  
+  url: jdbc:hive2://172.16.5.71:10000
+  driver-class-name: org.apache.hive.jdbc.HiveDriver
+  username: grid
+  password: grid
+  
+hdfs:
+  uri: hdfs://172.16.5.71:9000
+  user: grid
+  
+spider:
+  src: http://172.16.2.102:5000/api/v2/src
+  command: http://172.16.2.102:5000/api/v2/command
+  
+temppath: d:/tmp
+  

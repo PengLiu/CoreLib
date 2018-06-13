@@ -1,0 +1,11 @@
+spring:  
+  datasource:  
+    url : jdbc:mysql://172.16.3.113:3306/coredata_test  
+    username : root  
+    password : passed
+    driverClassName : com.mysql.jdbc.Driver  
+    initialization-mode: always
+  redis:
+    host: 172.16.3.113
+    port: 6379
+    pub: events

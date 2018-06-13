@@ -1,0 +1,12 @@
+spring:
+  jmx:
+    enabled: false
+
+snmp:
+  port: 1162
+
+zookeeper:
+  addr: 172.16.3.113:2181
+
+kafka:
+  addrType: OUTSIDE

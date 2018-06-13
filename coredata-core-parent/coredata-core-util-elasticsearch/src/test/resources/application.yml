@@ -1,0 +1,19 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      properties: 
+        client: 
+          transport: 
+            sniff: false
+            ignore_cluster_name: false
+            ping_timeout: 5s
+            nodes_sampler_interval: 300s
+      repositories:
+        enable: true
+      index:
+        shards: 5
+        replicas: 1
+        refreshInterval: 5s

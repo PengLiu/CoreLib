@@ -1,0 +1,28 @@
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    com.coredata: ERROR
+    
+spring:
+  data:
+    neo4j:
+      auto-index: assert
+      uri: bolt://172.16.3.113
+      username: neo4j
+      password: deta
+    elasticsearch:
+      cluster-name: es-cluster
+      cluster-nodes: 172.16.3.113:9300
+      local: false
+      repositories:
+        enable: true
+  kafka:
+    bootstrap-servers: 172.16.3.113:9094
+    consumer:
+      group-id: test_data_import
+      auto-offset-reset: latest        
+      enable-auto-commit: true
+      auto-commit-interval: 500
+    topics:
+      data_import: test_data_import

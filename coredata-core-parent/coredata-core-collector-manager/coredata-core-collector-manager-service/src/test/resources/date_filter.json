@@ -1,0 +1,13 @@
+[{
+	"column": 6,
+	"filters": [{
+		"name": "date",
+		"config": {
+			"actionType": "Replace",
+			"actionRule": {
+				"src": "MM/dd/YYYY",
+				"target": "UNIX_MS"
+			}
+		}
+	}]
+}]
